@@ -230,7 +230,7 @@ section {
 }
 
 .project-card {
-  min-width: 250px;
+  
   width: 350px;
   color: bisque;
   flex: 0 0 auto;
@@ -331,6 +331,11 @@ footer {
     height: 200px;
   }
 
+  .project-card img{
+    width: 235px;
+    height: 250px;
+  }
+
   .buton,
   .button,
   .buttton {
@@ -388,6 +393,11 @@ footer {
   .motion-image {
     width: 250px;
     height: 250px;
+  }
+
+  .project-card img{
+    width: 250px;
+    height: 270px;
   }
 
   .project-card {
