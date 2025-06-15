@@ -150,7 +150,7 @@ section {
   background: var(--button-color);
   color: #fff;
   border: none;
-  border-radius: 50%;
+  border-radius: 50px;
   text-decoration: none;
 }
 
@@ -344,6 +344,11 @@ footer {
     text-align: center;
   }
 
+  .buton{
+    margin-left: 20px;
+    border-radius: 40%;
+  }
+
   .skills-list {
     padding: 0 1em;
   }
@@ -410,6 +415,12 @@ footer {
     margin-left: 0;
     width: auto;
   }
+
+  .buton{
+    margin-left: 20px;
+    border-radius: 20%;
+  }
+
 
   .skills-list {
     flex-direction: row;
