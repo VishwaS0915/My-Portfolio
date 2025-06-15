@@ -250,7 +250,7 @@ section {
 }
 
 .project-card:hover {
-  transform: rotateY('-30px');
+  transform: rotateY('-50');
   transform: scale(1.5);
   border-color: var(--text-dark);
 
@@ -265,9 +265,10 @@ form {
 }
 
 .buttton {
+  min-width: 250;
   margin-top: 1em;
   margin-left: 2em; 
-  width: 850px;
+  width: 800px;
   display: inline-block;
   padding: 0.6em 1.2em;
   background: var(--button-color);
@@ -290,6 +291,8 @@ input, textarea {
   font-size: 1em;
 }
 
+
+
 footer {
   text-align: center;
   background: var(--text-dark);
@@ -300,4 +303,138 @@ footer {
 
 .projects-slider::-webkit-scrollbar {
   display: none;
+}
+
+/* Mobile: up to 600px */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .motion-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .buton,
+  .button,
+  .buttton {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .skills-list {
+    padding: 0 1em;
+  }
+
+  .skill-item {
+    width: 100%;
+  }
+
+  .projects-slider {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  form {
+    padding: 0 1em;
+  }
+
+  .buttton {
+    max-width: 100%;
+  }
+}
+
+/* Tablet: 601px to 992px */
+@media (min-width: 601px) and (max-width: 992px) {
+  nav ul {
+    gap: 1.5em;
+  }
+
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-content p {
+    font-size: 1.2rem;
+  }
+
+  .motion-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .project-card {
+    width: 300px;
+  }
+
+  .button,
+  .buton,
+  .buttton {
+    margin-left: 0;
+    width: auto;
+  }
+
+  .skills-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill-item {
+    width: 45%;
+  }
+
+  form {
+    padding: 0 2em;
+  }
+
+  .buttton {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Laptop/Desktop: 993px and above */
+@media (min-width: 993px) {
+  .skills-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill-item {
+    width: 45%;
+    margin: 1em;
+  }
+
+  .projects-slider {
+    flex-direction: row;
+  }
 }
